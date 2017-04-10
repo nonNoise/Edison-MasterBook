@@ -6,14 +6,14 @@ import time
 print "LED Test!"
 # コマンドラインに文字を表示
 x = mraa.Gpio(13)
-# xという変数でGPIO8番を扱うことが出来る
+# xという変数でGPIO13番を扱うことが出来る
 x.dir(mraa.DIR_OUT)
 # xのdir関数でGPIOを出力モードにする
 x.write(1)
-# x(GPIO８番の事)に１を書き込み、Hiレベルにする
+# x(GPIO13番の事)に１を書き込み、Hiレベルにする
 time.sleep(1)
 # time.sleep関数で、1秒待つ※ここで0.1とすると100ms待つ事が出来る
 x.write(0)
-# x(GPIO８番の事)に0を書き込み、Lowレベルにする
+# x(GPIO13番の事)に0を書き込み、Lowレベルにする
 time.sleep(1)
 # time.sleep関数で、1秒待つ
