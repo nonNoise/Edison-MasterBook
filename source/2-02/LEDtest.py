@@ -5,8 +5,8 @@ import time
 # 時間に関するライブラリの使用宣言
 print "LED Test!"
 # コマンドラインに文字を表示
-x = mraa.Gpio(13)
-# xという変数でGPIO13番を扱うことが出来る
+x = mraa.Gpio(8)
+# xという変数でGPIO8番を扱うことが出来る
 x.dir(mraa.DIR_OUT)
 # xのdir関数でGPIOを出力モードにする
 x.write(1)
